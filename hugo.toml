@@ -1,0 +1,32 @@
+baseURL = 'http://laurenzitney.com/'
+languageCode = 'en-us'
+title = "Lauren Zitney"
+theme = "bones"
+
+# https://gohugo.io/content-management/menus/
+[menu]
+[[menu.main]]
+  name = 'lauren zitney'
+  pageRef = '/'
+  weight = 10
+[[menu.main]]
+  name = 'posts'
+  pageRef = '/posts'
+  weight = 20
+[[menu.main]]
+  name = 'about'
+  pageRef = '/about'
+  weight = 30
+
+# To allow building restructured text
+[security.exec]
+  allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^npx$', '^postcss$', '^rst2html$']
+
+# Default home page config
+[params]
+  homeTitle = 'Welcome.'
+  homeSubtitle = 'Enjoy.'
+
+# Taxonomies
+[taxonomies]
+  tag = 'tags'

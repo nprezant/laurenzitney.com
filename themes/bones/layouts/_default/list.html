@@ -1,0 +1,7 @@
+{{ define "main" }}
+
+<h1>{{ lower .Title }}</h1>
+
+{{ partial "pagelist" (dict "pages" .Pages) }}
+
+{{ end }}

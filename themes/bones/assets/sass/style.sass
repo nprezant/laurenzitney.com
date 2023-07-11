@@ -1,8 +1,10 @@
 // ------------------------------------------
 // Colors
 // ------------------------------------------
-$title-font-stack: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif
-$body-font-stack: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif
+$title-fonts: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif
+$header-fonts: Merriweather, serif
+$body-fonts: "Open Sans", source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif
+
 $background-color: #ffffff
 $background-color-dark: rgb(242, 242, 242)
 $text-color: rgb(41, 41, 41)
@@ -17,10 +19,13 @@ $accent5: #6D4100
 // ------------------------------------------
 
 body
-  font-family: $body-font-stack
+  font-family: $body-fonts
   color: $text-color
   margin: 0
   font-size: 130%
+
+h1, .title, .subtitle
+  font-family: $title-fonts
 
 a
   font-style: italic

@@ -1,19 +1,19 @@
 {{ define "main" }}
 
-  <h1 class="title">
+  <h1 class="home-title">
     {{ with .Site.Params.homeTitle }}
     {{ . }}
     {{ else }}
     Hello.
     {{ end }}
   </h1>
-  <h2 class="subtitle">
+  <p class="home-subtitle">
     {{ with .Site.Params.homeSubtitle }}
     {{ . }}
     {{ else }}
     The beginnings of a website.
     {{ end }}
-  </h2>
+  </p>
 
   <h2>Recent Posts</h2>
   {{- $recentPosts := (first 6 (where site.RegularPages "Type" "==" "posts")) }}

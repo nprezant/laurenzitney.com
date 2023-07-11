@@ -1,13 +1,13 @@
 {{ define "main" }}
 
-  <h1 class="home-title">
+  <h1 class="title">
     {{ with .Site.Params.homeTitle }}
     {{ . }}
     {{ else }}
     Hello.
     {{ end }}
   </h1>
-  <h2 class="home-subtitle">
+  <h2 class="subtitle">
     {{ with .Site.Params.homeSubtitle }}
     {{ . }}
     {{ else }}
@@ -15,7 +15,7 @@
     {{ end }}
   </h2>
 
-  <h1>Recent Posts</h1>
+  <h2>Recent Posts</h2>
   {{- $recentPosts := (first 6 (where site.RegularPages "Type" "==" "posts")) }}
   {{ partial "pagelist" (dict "pages" $recentPosts) }}
 

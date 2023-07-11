@@ -19,14 +19,30 @@ $accent5: #6D4100
 // General
 // ------------------------------------------
 
+main
+  display: flex
+  justify-content: center
+  padding: 2ex
+
+// Keeps text in a smaller area on wide screens
+@media screen and (min-width: 70ex)
+  .content
+    min-width: 0
+    max-width: 70ex
+    width: 100%
+
 body
   font-family: $body-fonts
   color: $text-color
   margin: 0
   font-size: 100%
 
-h1, .title, .subtitle
+h1, h2
   font-family: $header-fonts
+
+h1
+  font-size: xxx-large
+  word-break: break-word
 
 a
   text-decoration: underline
@@ -71,6 +87,13 @@ nav
     &:first-child
       flex-grow: 1
 
+blockquote
+  font-style: italic
+  border-left: medium solid
+  padding-left: 3ex
+  .attribution
+    text-align: right
+
 // ------------------------------------------
 // reStructuredText
 // ------------------------------------------
@@ -79,7 +102,7 @@ nav
 .document
   margin-bottom: 4ex
 
-@mixin admonition-type($name, $light-color, $dark-color)
+@mixin admonition-colors($name, $light-color, $dark-color)
   &.#{$name}
     background-color: $light-color
     border: thin solid $dark-color
@@ -107,15 +130,15 @@ nav
     clear: both
     content: ""
   
-  @include admonition-type(note, #eee, #ccc)
-  @include admonition-type(tip, #a3ff97, #80c877)
-  @include admonition-type(attention, rgb(237, 225, 94), rgb(233, 213, 2))
-  @include admonition-type(caution, rgb(237, 225, 94), rgb(233, 213, 2))
-  @include admonition-type(danger, rgb(237, 123, 94), rgb(226, 84, 48))
-  @include admonition-type(error, rgb(233, 143, 120), rgb(226, 84, 48))
-  @include admonition-type(hint, rgb(119, 198, 235), rgb(45, 170, 228))
-  @include admonition-type(important, #rgb(119, 222, 133), rgb(94, 237, 113))
-  @include admonition-type(warning, rgb(237, 225, 94), rgb(233, 213, 2))
+  @include admonition-colors(note, #eee, #ccc)
+  @include admonition-colors(tip, #a3ff97, #80c877)
+  @include admonition-colors(attention, rgb(237, 225, 94), rgb(233, 213, 2))
+  @include admonition-colors(caution, rgb(237, 225, 94), rgb(233, 213, 2))
+  @include admonition-colors(danger, rgb(237, 123, 94), rgb(226, 84, 48))
+  @include admonition-colors(error, rgb(233, 143, 120), rgb(226, 84, 48))
+  @include admonition-colors(hint, rgb(119, 198, 235), rgb(45, 170, 228))
+  @include admonition-colors(important, #rgb(119, 222, 133), rgb(94, 237, 113))
+  @include admonition-colors(warning, rgb(237, 225, 94), rgb(233, 213, 2))
 
 // definition headers
 dt
@@ -133,28 +156,9 @@ dd
     border-top: thin solid $text-color-light
     padding-top: 1ex
 
-// quotes
-blockquote
-  font-style: italic
-  border-left: medium solid
-  padding-left: 3ex
-  .attribution
-    text-align: right
-
 // ------------------------------------------
 // Custom classes (introduced by theme)
 // ------------------------------------------
-
-.doc
-  display: flex
-  justify-content: center
-  padding: 2ex
-
-@media screen and (min-width: 70ex)
-  .content
-    max-width: 70ex
-    width: 100%
-    min-width: 0em
 
 .pagelist
   list-style-type: none
@@ -170,12 +174,11 @@ blockquote
   margin-top: 0
 
 .title
+  margin-bottom: 0
   font-size: xxx-large
-  margin: 0
-  word-break: break-word
 
 .subtitle
-  margin: 0
+  margin-top: 0
   color: $text-color-light
   font-size: larger
 

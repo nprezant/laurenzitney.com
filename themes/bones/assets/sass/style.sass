@@ -63,25 +63,10 @@ nav
 .document
   margin-bottom: 4ex
 
-// admonition themes
-$note-color: #eee
-$note-color-dark: #ccc
-$tip-color: #a3ff97
-$tip-color-dark: #80c877
-$attention-color: rgb(237, 225, 94)
-$attention-color-dark: rgb(233, 213, 2)
-$caution-color: rgb(237, 225, 94)
-$caution-color-dark: rgb(233, 213, 2)
-$danger-color: rgb(237, 123, 94)
-$danger-color-dark: rgb(226, 84, 48)
-$error-color: rgb(233, 143, 120)
-$error-color-dark: rgb(226, 84, 48)
-$hint-color: rgb(119, 198, 235)
-$hint-color-dark: rgb(45, 170, 228)
-$important-color: rgb(119, 222, 133)
-$important-color-dark: rgb(94, 237, 113)
-$warning-color: rgb(237, 225, 94)
-$warning-color-dark: rgb(233, 213, 2)
+@mixin admonition-type($name, $light-color, $dark-color)
+  &.#{$name}
+    background-color: $light-color
+    border: thin solid $dark-color
 
 .admonition
   border-radius: 0.3ex
@@ -105,33 +90,16 @@ $warning-color-dark: rgb(233, 213, 2)
     display: block
     clear: both
     content: ""
-  &.note
-    background-color: $note-color
-    border: thin solid $note-color-dark
-  &.tip
-    background-color: $tip-color
-    border: thin solid $tip-color-dark
-  &.attention
-    background-color: $attention-color
-    border: thin solid $attention-color-dark
-  &.caution
-    background-color: $caution-color
-    border: thin solid $caution-color-dark
-  &.danger
-    background-color: $danger-color
-    border: thin solid $danger-color-dark
-  &.error
-    background-color: $error-color
-    border: thin solid $error-color-dark
-  &.hint
-    background-color: $hint-color
-    border: thin solid $hint-color-dark
-  &.important
-    background-color: $important-color
-    border: thin solid $important-color-dark
-  &.warning
-    background-color: $warning-color
-    border: thin solid $warning-color-dark
+  
+  @include admonition-type(note, #eee, #ccc)
+  @include admonition-type(tip, #a3ff97, #80c877)
+  @include admonition-type(attention, rgb(237, 225, 94), rgb(233, 213, 2))
+  @include admonition-type(caution, rgb(237, 225, 94), rgb(233, 213, 2))
+  @include admonition-type(danger, rgb(237, 123, 94), rgb(226, 84, 48))
+  @include admonition-type(error, rgb(233, 143, 120), rgb(226, 84, 48))
+  @include admonition-type(hint, rgb(119, 198, 235), rgb(45, 170, 228))
+  @include admonition-type(important, #rgb(119, 222, 133), rgb(94, 237, 113))
+  @include admonition-type(warning, rgb(237, 225, 94), rgb(233, 213, 2))
 
 // definition headers
 dt
@@ -146,7 +114,7 @@ dd
 // footnotes
 .footnote
   &:first-of-type
-    border-top: thin solid $note-color-dark
+    border-top: thin solid $text-color-light
     padding-top: 1ex
 
 // quotes

@@ -1,40 +1,36 @@
+// ------------------------------------------
+// Colors
+// ------------------------------------------
 $title-font-stack: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif
 $body-font-stack: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif
 $background-color: #ffffff
 $background-color-dark: rgb(242, 242, 242)
 $text-color: rgb(41, 41, 41)
 $text-color-light: rgb(117, 117, 117)
+$text-color-light: rgb(25, 25, 25)
 $accent1: #004B6B
 $accent2: #5085a5
-$accent3: #31708e
-$accent4: #687864
 $accent5: #6D4100
 
-// admonition theming
-$note-color: #eee
-$note-color-dark: #ccc
-$tip-color: #a3ff97
-$tip-color-dark: #80c877
-$attention-color: rgb(237, 225, 94)
-$attention-color-dark: rgb(233, 213, 2)
-$caution-color: rgb(237, 225, 94)
-$caution-color-dark: rgb(233, 213, 2)
-$danger-color: rgb(237, 123, 94)
-$danger-color-dark: rgb(226, 84, 48)
-$error-color: rgb(233, 143, 120)
-$error-color-dark: rgb(226, 84, 48)
-$hint-color: rgb(119, 198, 235)
-$hint-color-dark: rgb(45, 170, 228)
-$important-color: rgb(119, 222, 133)
-$important-color-dark: rgb(94, 237, 113)
-$warning-color: rgb(237, 225, 94)
-$warning-color-dark: rgb(233, 213, 2)
+// ------------------------------------------
+// General
+// ------------------------------------------
 
 body
   font-family: $body-font-stack
   color: $text-color
   margin: 0
   font-size: 130%
+
+a
+  font-style: italic
+  text-decoration: underline
+  color: $accent1
+  &:hover
+    color: $accent5
+
+em
+  line-height: 1em
 
 nav
   display: flex
@@ -59,19 +55,33 @@ nav
       &:first-child
         flex-grow: 1
 
-.doc
-  display: flex
-  justify-content: center
-  padding: 2ex
+// ------------------------------------------
+// reStructuredText
+// ------------------------------------------
 
-@media screen and (min-width: 60em)
-  .content
-    max-width: 48em
-    width: 100%
-    min-width: 0em
-
+// content from rst file is put in a .document
 .document
   margin-bottom: 4ex
+
+// admonition themes
+$note-color: #eee
+$note-color-dark: #ccc
+$tip-color: #a3ff97
+$tip-color-dark: #80c877
+$attention-color: rgb(237, 225, 94)
+$attention-color-dark: rgb(233, 213, 2)
+$caution-color: rgb(237, 225, 94)
+$caution-color-dark: rgb(233, 213, 2)
+$danger-color: rgb(237, 123, 94)
+$danger-color-dark: rgb(226, 84, 48)
+$error-color: rgb(233, 143, 120)
+$error-color-dark: rgb(226, 84, 48)
+$hint-color: rgb(119, 198, 235)
+$hint-color-dark: rgb(45, 170, 228)
+$important-color: rgb(119, 222, 133)
+$important-color-dark: rgb(94, 237, 113)
+$warning-color: rgb(237, 225, 94)
+$warning-color-dark: rgb(233, 213, 2)
 
 .admonition
   border-radius: 0.3ex
@@ -123,6 +133,45 @@ nav
     background-color: $warning-color
     border: thin solid $warning-color-dark
 
+// definition headers
+dt
+  font-weight: bold
+
+// definition data
+dd
+  margin-bottom: 2ex
+  >.first
+    margin-top: 0
+
+// footnotes
+.footnote
+  &:first-of-type
+    border-top: thin solid $note-color-dark
+    padding-top: 1ex
+
+// quotes
+blockquote
+  font-style: italic
+  border-left: medium solid
+  padding-left: 3ex
+  .attribution
+    text-align: right
+
+// ------------------------------------------
+// Custom classes (introduced by theme)
+// ------------------------------------------
+
+.doc
+  display: flex
+  justify-content: center
+  padding: 2ex
+
+@media screen and (min-width: 60em)
+  .content
+    max-width: 48em
+    width: 100%
+    min-width: 0em
+
 .pagelist
   list-style-type: none
   padding: 0
@@ -135,13 +184,6 @@ nav
 
 .summary-text
   margin-top: 0
-
-a
-  font-style: italic
-  text-decoration: underline
-  color: $accent1
-  &:hover
-    color: $accent5
 
 .title
   font-size: xxx-large
@@ -207,26 +249,3 @@ a
   text-decoration: none
   font-style: inherit // most links are italicized
   color: inherit
-
-dt
-  font-weight: bold
-
-dd
-  margin-bottom: 2ex
-  >.first
-    margin-top: 0
-
-.footnote
-  &:first-of-type
-    border-top: thin solid $note-color-dark
-    padding-top: 1ex
-
-blockquote
-  font-style: italic
-  .attribution
-    text-align: right
-  border-left: medium solid
-  padding-left: 3ex
-
-em
-  line-height: 1em

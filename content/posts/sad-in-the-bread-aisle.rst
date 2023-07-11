@@ -36,11 +36,11 @@ Let me share a bit about what it felt like to have this meme resonate.
   means that I am not alone in this experience.
 
 * Finally, I felt myself sigh deeply, and thought something along the lines of
-  “What am I living through right now? What is this moment? How can I grapple
-  with it?”
+  *“What am I living through right now? What is this moment? How can I grapple
+  with it?”*
 
 The powerful thing about memes is that they sum up a lot of complex feelings in
-a pithy, relatable way. This meme made me feel both confused and relieved that
+a pithy, relatable way. This meme made me feel both confused *and* relieved that
 others must feel similarly. I wanted to unpack why this meme resonated with me.
 I wanted to learn what the resonance says about my worldview. And I hoped to
 come away with a better idea of what it says about what we’re living through,
@@ -51,7 +51,7 @@ The First Time I Ever Bought Laundry Detergent
 
 The first time I remember feeling something like this, I was in a Target
 sometime early in college. It was my first time buying laundry detergent for
-myself, and I remember staring at the aisle of choices, and feeling tears well
+myself, and I remember staring at the *aisle* of choices, and feeling tears well
 up in my eyes.
 
 I think a few things were going on:
@@ -60,10 +60,10 @@ I think a few things were going on:
   while some choice is good, too much choice can be paralyzing and
   overwhelming.)
 
-* I was processing how ridiculous it was that there were so many options for
+* I was processing how *ridiculous* it was that there were so many options for
   laundry detergent. The paradox of choice for health insurance or where to live
-  is frustrating. But at least those things have real implications. But laundry
-  detergent?
+  is frustrating. But at least those things have real implications. *But laundry
+  detergent?*
 
 * I felt a sense of freedom “woah, I can choose my own laundry detergent now. I
   should choose one that matches my personality.”
@@ -73,11 +73,13 @@ I think a few things were going on:
   look at each label.”
 
 * I was thinking “look at all this plastic which can’t actually be recycled
-  because, for the most part, the idea that plastic is recyclable is a myth.”
+  because, for the most part, the idea that plastic is recyclable `is a myth`_.”
 
 * And there were many other things running through my head like, “I’m sad to be
   in this depressing building instead of outside in the sunshine.” “I’m stressed
   because I have an exam coming up.” “I’m hungry.” …
+
+.. _is a myth: https://www.npr.org/2022/12/08/1141601301/the-myth-of-plastic-recycling
 
 I don’t remember which laundry detergent I chose. And it still doesn’t matter.
 Now, like a good capitalist drone, I scan the aisle for the packaging that looks
@@ -121,7 +123,7 @@ It’s all overwhelming, all set to the cheery soundtrack of “Hi, how are you?
 “Good, how are you?” “Good.” “Great, have a good day!”
 
 And too often, the strawberries that I buy just rot in the back of my fridge,
-making me feel responsible for the waste perpetually churned out by our
+making *me* feel responsible for the waste perpetually churned out by our
 civilization.
 
 What the heck am I living through right now? What is this moment?
@@ -131,19 +133,23 @@ I’m really not deep in the theory, or academic research on this. Some people
 would just call what I’m experiencing “capitalism.” Others would probably bring
 in the term “late stage capitalism.” And once I start throwing around the word
 “capitalism,” some folks will pipe up to let me know that “socialism doesn’t
-work.” (Although, I don’t think anyone really knows what socialism means.)
+work.” (Although,
+`I don’t think anyone really knows what socialism means <https://freakonomics.com/podcast/does-anyone-really-know-what-socialism-is/>`_.)
 
 Rather than trying to get a precise diagnosis here, I want to articulate a few
 observations.
 
 #.  You can buy almost anything.
 
-    * You want a disco-themed bra? That’ll be $17.03.
-    * You want a life-saving rabies vaccine series? Sure. An easy $1,200-$6,500.
+    * You want a
+      `disco-themed bra <https://www.amazon.com/Forum-Novelties-Womens-70s-Disco/dp/B00OBVRNHW>`_?
+      That’ll be $17.03.
+    * You want a life-saving rabies vaccine series? Sure.
+      `An easy $1,200-$6,500 <https://bera.house.gov/news/documentsingle.aspx?DocumentID=399427>`_.
       (Although your health insurance company may have different or no cost
       estimates for you. I know this tidbit from personal experience.)
-    * In some cases, you can even buy admission to your child’s college of
-      choice
+    * In some cases, you can even buy `admission to your child’s college of
+      choice <https://www.forbes.com/sites/michaeltnietzel/2022/10/30/legacy-college-admissions-come-under-fire-in-new-report/?sh=72d05c3d5f07>`_.
 
 #.  Building and/or finding community is really hard. My partner and I often feel
     isolated, even as COVID has become a less prominent driver in our lives. Many
@@ -163,8 +169,8 @@ observations.
       don’t have a partner (and the right kind of partner, at that) you are
       incomplete, or have no place in society.
 
-The feeling of being able to buy anything juxtaposed to a reality of isolation,
-impossible or undesirable metrics of success, and constant messaging of
+The *feeling* of being able to buy anything juxtaposed to a reality of isolation,
+impossible or *undesirable* metrics of success, and constant messaging of
 insufficiency is deeply troubling.
 
 Maybe I will finally feel complete…

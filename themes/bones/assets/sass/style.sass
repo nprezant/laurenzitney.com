@@ -35,6 +35,12 @@ a
 em
   line-height: 1em
 
+p
+  margin-top: 2.6ex
+
+li
+  margin-top: 2.6ex
+
 figure
   text-align: center
   margin-left: auto
@@ -59,10 +65,11 @@ nav
     margin: 0
     padding: 0
     width: 100%
-    li
-      padding: 1ex
-      &:first-child
-        flex-grow: 1
+  li
+    margin: 0
+    padding: 1ex
+    &:first-child
+      flex-grow: 1
 
 // ------------------------------------------
 // reStructuredText
@@ -213,6 +220,8 @@ blockquote
   padding: 0
   display: flex
   flex-wrap: wrap
+  li
+    margin: 0
 
 .tag
   display: block

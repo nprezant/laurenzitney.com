@@ -142,35 +142,35 @@ work.” (Although,
 Rather than trying to get a precise diagnosis here, I want to articulate a few
 observations.
 
-#.  You can buy almost anything.
+1) You can buy almost anything.
 
-    * You want a
-      `disco-themed bra <https://www.amazon.com/Forum-Novelties-Womens-70s-Disco/dp/B00OBVRNHW>`_?
-      That’ll be $17.03.
-    * You want a life-saving rabies vaccine series? Sure.
-      `An easy $1,200-$6,500 <https://bera.house.gov/news/documentsingle.aspx?DocumentID=399427>`_.
-      (Although your health insurance company may have different or no cost
-      estimates for you. I know this tidbit from personal experience.)
-    * In some cases, you can even buy `admission to your child’s college of
-      choice <https://www.forbes.com/sites/michaeltnietzel/2022/10/30/legacy-college-admissions-come-under-fire-in-new-report/?sh=72d05c3d5f07>`_.
+* You want a
+  `disco-themed bra <https://www.amazon.com/Forum-Novelties-Womens-70s-Disco/dp/B00OBVRNHW>`_?
+  That’ll be $17.03.
+* You want a life-saving rabies vaccine series? Sure.
+  `An easy $1,200-$6,500 <https://bera.house.gov/news/documentsingle.aspx?DocumentID=399427>`_.
+  (Although your health insurance company may have different or no cost
+  estimates for you. I know this tidbit from personal experience.)
+* In some cases, you can even buy `admission to your child’s college of
+  choice <https://www.forbes.com/sites/michaeltnietzel/2022/10/30/legacy-college-admissions-come-under-fire-in-new-report/?sh=72d05c3d5f07>`_.
 
-#.  Building and/or finding community is really hard. My partner and I often feel
-    isolated, even as COVID has become a less prominent driver in our lives. Many
-    people I meet share that they, too, feel isolated. What does “home” mean? How do
-    you find it?
+2) Building and/or finding community is really hard. My partner and I often feel
+isolated, even as COVID has become a less prominent driver in our lives. Many
+people I meet share that they, too, feel isolated. What does “home” mean? How do
+you find it?
 
-#.  We are surrounded by messaging that tells us we are insufficient and
-    incomplete.
+3) We are surrounded by messaging that tells us we are insufficient and
+incomplete.
 
-    * When I find myself on Pinterest, TikTok, or Instagram, it’s less than 3
-      minutes before I’m told that my body is too big, too heavy, too soft, or
-      too white (while other folks are told theirs is not white enough!).
-    * On LinkedIn, the message is that I am not achieving enough, growing
-      enough, networking enough.
-    * Popular media tells me that my happily-ever-after is in a heterogeneous,
-      cis, monogamous (probably white) relationship. In other words, if you
-      don’t have a partner (and the right kind of partner, at that) you are
-      incomplete, or have no place in society.
+* When I find myself on Pinterest, TikTok, or Instagram, it’s less than 3
+  minutes before I’m told that my body is too big, too heavy, too soft, or
+  too white (while other folks are told theirs is not white enough!).
+* On LinkedIn, the message is that I am not achieving enough, growing
+  enough, networking enough.
+* Popular media tells me that my happily-ever-after is in a heterogeneous,
+  cis, monogamous (probably white) relationship. In other words, if you
+  don’t have a partner (and the right kind of partner, at that) you are
+  incomplete, or have no place in society.
 
 The *feeling* of being able to buy anything juxtaposed to a reality of isolation,
 impossible or *undesirable* metrics of success, and constant messaging of

@@ -1,10 +1,8 @@
-<div class="summary">
+<a class="summary" href="{{ .Permalink }}">
 
 <div>
   <p class="summary-header">
-    <a href="{{ .Permalink }}">
-      <span class="summary-title">{{ .Title }}</span>
-    </a>
+    <span class="summary-title">{{ .Title }}</span>
     {{ if not .Date.IsZero }}
     <span class="summary-day">
       {{ .Date.Format "Jan 2, 2006"}}
@@ -39,4 +37,4 @@
   {{ end }}
 {{ end }}
 
-</div>
+</a>

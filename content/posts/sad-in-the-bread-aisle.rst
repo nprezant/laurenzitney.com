@@ -143,7 +143,7 @@ work.” (Although,
 Rather than trying to get a precise diagnosis here, I want to articulate a few
 observations.
 
-1) You can buy almost anything.
+\1) You can buy almost anything.
 
 * You want a
   `disco-themed bra <https://www.amazon.com/Forum-Novelties-Womens-70s-Disco/dp/B00OBVRNHW>`_?

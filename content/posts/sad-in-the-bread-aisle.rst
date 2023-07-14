@@ -7,12 +7,12 @@ photo = "images/grocery-aisle.jpg"
 tags = ['civilization', 'society and culture', 'society', 'community', 'philosophy']
 +++
 
-{{< figure src="/images/grocery-aisle.jpg" width="100%" >}}
+{{< figure src="/laurenzitney.com/images/grocery-aisle.jpg" width="100%" >}}
 
 The Meme
 ########
 
-{{< figure src="/images/existential-wave.webp" >}}
+{{< figure src="/laurenzitney.com/images/existential-wave.webp" >}}
 
 I’ve grown up surrounded by friends who love memes. I’ve joked that I’m a meme
 lightweight. Memes often don’t hit for me, or I’m afraid I’m missing a hidden
@@ -216,4 +216,4 @@ from the places that make us feel incomplete, overwhelmed, and empty. We have to
 invest in the places, and most importantly, the people, which make us feel
 whole.
 
-{{< figure src="/images/teamwork-rock.jpg" width="100%" >}}
+{{< figure src="/laurenzitney.com/images/teamwork-rock.jpg" width="100%" >}}

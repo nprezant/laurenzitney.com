@@ -1,19 +1,42 @@
-<p class="summary-header">
-  <a href="{{ .Permalink }}">
-    <span class="summary-title">{{ .Title }}</span>
-  </a>
-  {{ if not .Date.IsZero }}
-  <span class="summary-day">
-    {{ .Date.Format "Jan 2, 2006"}}
-  </span>
-  {{ end }}
-</p>
+<div class="summary">
 
-{{/*  Removes headers from the content summary  */}}
-{{- $summaryText := .Content | safeHTML | replaceRE `<h\d>(.*)<\/h\d>` "" | htmlUnescape | safeHTML | plainify | truncate 200 -}}
-
-{{ if $summaryText }}
-  <p class="summary-text">
-    {{ $summaryText }}
+<div>
+  <p class="summary-header">
+    <a href="{{ .Permalink }}">
+      <span class="summary-title">{{ .Title }}</span>
+    </a>
+    {{ if not .Date.IsZero }}
+    <span class="summary-day">
+      {{ .Date.Format "Jan 2, 2006"}}
+    </span>
+    {{ end }}
   </p>
+
+  {{/*  Content summary! Removes headers from the content summary  */}}
+  {{- $summaryText := .Content | safeHTML | replaceRE `<h\d>(.*)<\/h\d>` "" | htmlUnescape | safeHTML | plainify | truncate 200 -}}
+
+  {{ if $summaryText }}
+    <p class="summary-text">
+      {{ $summaryText }}
+    </p>
+  {{ end }}
+
+</div>
+
+{{/*
+  For debugging, can be useful to use something like
+  the following to print out which resources are available.
+  The image must be in the assets/ directory.
+  <p>{{resources.Match "**"}}</p>
+  */}}
+
+{{ with .Params.photo }}
+  {{ with resources.GetMatch . }}
+    {{ $img := .Fill "112x112" }}
+    <figure>
+      <img src="{{ $img.RelPermalink }}">
+    </figure>
+  {{ end }}
 {{ end }}
+
+</div>

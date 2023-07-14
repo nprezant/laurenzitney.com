@@ -3,6 +3,7 @@ title = "Sad in the Bread Aisle"
 subtitle = "What the Grocery Store Experience Can Tell Us About Living During This Era of Human Civilization"
 date = 2023-07-02
 draft = false
+photo = "images/grocery-aisle.jpg"
 tags = ['civilization', 'society and culture', 'society', 'community', 'philosophy']
 +++
 

@@ -32,7 +32,7 @@ theme = "bones"
   tag = 'tags'
 
 # Allows looking in the static dir for assets
-[module]
-[[module.mounts]]
-  source = 'static'
-  target = 'assets'
+# [module]
+# [[module.mounts]]
+#   source = 'static'
+#   target = 'assets'

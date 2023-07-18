@@ -11,7 +11,7 @@
   </p>
 
   {{/*  Content summary! Removes headers from the content summary  */}}
-  {{- $summaryText := .Content | safeHTML | replaceRE `<h\d>(.*)<\/h\d>` "" | htmlUnescape | safeHTML | plainify | truncate 200 -}}
+  {{- $summaryText := .Content | safeHTML | replaceRE `<h\d>(.*)<\/h\d>` "" | replaceRE `<figure>(\n|.)*?<\/figure>` "" | htmlUnescape | safeHTML | plainify | truncate 200 -}}
 
   {{ if $summaryText }}
     <p class="summary-text">

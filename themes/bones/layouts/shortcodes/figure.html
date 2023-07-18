@@ -33,7 +33,7 @@
          {{- with .Get "loading" }} loading="{{ . }}"{{ end -}}
     /><!-- Closing img tag -->
     {{- if .Get "link" }}</a>{{ end -}}
-    {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr") -}}
+    {{- if or (or (or (or (.Get "unsplash-user") (.Get "unsplash-handle")) (.Get "title")) (.Get "caption")) (.Get "attr") -}}
         <figcaption>
             {{ with (.Get "title") -}}
                 <h4>{{ . }}</h4>
@@ -46,6 +46,15 @@
                 {{- .Get "attr" | markdownify -}}
                 {{- if .Get "attrlink" }}</a>{{ end }}</p>
             {{- end }}
+            {{- $abc := .Get "unsplash-handle" -}}
+            {{- if or (.Get "unsplash-handle") (.Get "unsplash-user") -}}<p>
+                {{- $handle := .Get "unsplash-handle" -}}
+                {{- $user := .Get "unsplash-user" -}}
+                {{- if not $handle -}}{{- $handle = .Get "unsplash-user" -}}{{- end -}}
+                {{- if not $user -}}{{- $user = .Get "unsplash-handle" -}}{{- end -}}
+                Photo by <a href="https://unsplash.com/@{{ $handle }}?utm_source=laurenzitney.com&utm_medium=referral">{{ $user }}</a>
+                on <a href="https://unsplash.com/?utm_source=laurenzitney.com&utm_medium=referral\">Unsplash</a></p>
+            {{- end -}}
         </figcaption>
     {{- end }}
 </figure>

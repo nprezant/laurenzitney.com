@@ -1,0 +1,21 @@
+= laurenzitney.com
+
+== Publishing
+
+Every push to the `main` branch publishes a new build.
+
+== Building Locally
+
+Build with
+
+[source,bash]
+----
+hugo
+----
+
+Test with
+
+[source,bash]
+----
+hugo serve -D
+----

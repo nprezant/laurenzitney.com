@@ -1,0 +1,143 @@
++++
+title = 'This is Asciidoc'
+subtitle = 'A sampling'
+date = 2023-07-07
+draft = true
+tags = ['internal', 'dev']
++++
+
+We like to have fun
+
+This page serves as an example of some of what
+reStructuredText can do, how to do it, and what
+it ends up looking on the website.<!--more-->
+
+== A definitive guide
+
+Please see https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[here]
+
+== Inline markup
+
+We have _emphasis_, *strong emphasis*, and `code samples`
+
+== Lists
+
+=== Unordered. Can use list styles to change marker type.
+
+* item
+** nested
+*** deeper
+
+=== Ordered.
+
+. this list
+. is auto-
+. numbered
+
+=== Checklist
+
+* [*] checked
+* [x] also checked
+* [ ] not checked
+* normal list item
+
+== Terms
+
+term:: Definition of the term, which must be indented
+
+next term::
+Description.
+
+another term::
+A long paragraph description of the term can span
+multiple lines in the source code. To make a new paragraph,
+a blank line must be left.
++
+So this is a middle paragraph.
++
+And a final paragraph.
+
+== Breaks
+
+Before thematic pause
+
+'''
+
+after
+
+== Links
+
+External https://domain.invalid/[link].
+
+Internal relative link:about.html[link].
+
+== Cross References
+
+See <<Cross References>>, boom.
+
+== Inter-document cross references
+
+Refer to xref:document-b.adoc#section-b[Section B of Document B] for more information.
+
+== Admonitions
+
+Admonitions may be a nice alternative to footnotes.
+
+NOTE: This is a note admonition.
+   This is the second line of the first paragraph.
+
+   - The note contains all indented body elements
+     following.
+   - It includes this bullet list.
+
+TIP: This is a tip admonition.
+   ta da.
+
+CAUTION: caution
+
+IMPORTANT: important
+
+WARNING: warning
+
+== Admonition blocks
+
+[NOTE]
+====
+An admonition block may contain complex content.
+
+.A list
+- one
+- two
+- three
+
+Another paragraph.
+====
+
+== Footnotes
+
+A statement.footnote:[Clarification about this statement.]
+
+A bold statement!footnote:disclaimer[Opinions are my own.]
+
+Another bold statement.footnote:disclaimer[]
+
+== Raw HTML
+
+We can also include raw html if we want.
+
+++++
+<!-- unsplash needs credits... -->
+<!-- <img src="https://source.unsplash.com/gi18Ad84ndQ" alt="" width="300" > -->
+<img src="https://i.imgur.com/sFq0wAC.jpeg" alt="" width="300" >
+++++
+
+== Blockquote
+
+[quote,Monty Python and the Holy Grail]
+____
+Dennis: Come and see the violence inherent in the system. Help! Help! I'm being repressed!
+
+King Arthur: Bloody peasant!
+
+Dennis: Oh, what a giveaway! Did you hear that? Did you hear that, eh? That's what I'm on about! Did you see him repressing me? You saw him, Didn't you?
+____
